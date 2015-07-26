@@ -28,9 +28,9 @@ Show
 
 Show
     LinkedSockets 6
-    SetTextColor 255 0 0
-    SetBorderColor 255 0 0
-    SetBackgroundColor 255 255 255 255
+    SetTextColor 0 0 255
+    SetBorderColor 0 0 0
+    SetBackgroundColor 255 255 0
     SetFontSize 44
     PlayAlertSound 6 100
 
@@ -110,7 +110,7 @@ Show
 
 Show
     Class "Divination"
-    SetBackgroundColor 200 50 250
+    SetBackgroundColor 0 0 0
     SetBorderColor 0 0 0
     SetTextColor 150 50 190
     SetFontSize 38
@@ -133,12 +133,15 @@ Show
     SetTextColor 255 190 0
     SetBackgroundColor 75 75 75
     SetBorderColor 0 0 0
+    PlayAlertSound 6 100	
     SetFontSize 38
 
 Show
     Sockets 6
-    SetBackgroundColor 75 75 75
+    SetBackgroundColor 0 0 0 
+    SetTextColor 255 190 0
     SetBorderColor 255 0 0
+    PlayAlertSound 6 100
     SetFontSize 38
 
 #Chromatic Recipe
@@ -223,20 +226,23 @@ Show
 #------------------------------------------------------------------------
 # 0705 # CHANCE ORB BASES - ADD YOUR ITEMS HERE
 #-------------------------------------------------------------------------
-# ADD ADDITIONAL STUFF HERE IF YOU WANT
-
-Show
-    BaseType "Occultist's Vestment" "Imperial Bow" "Prophecy Wand" "Judgement Staff" "Gavel" "Gold Ring" "Agate Amulet" "Spine Bow" "Amethyst Ring"
-    SetBorderColor 0 100 0
-    SetTextColor 255 255 255 255
-    
 
 #Chisel Recipe
 Show
     BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+	Rarity Normal
     SetTextColor 0 0 0
     SetBackgroundColor 255 255 255 200
     SetBorderColor 0 0 0 
+
+Show
+    BaseType "Occultist's Vestment" "Imperial Bow" "Prophecy Wand" "Judgement Staff" "Gavel" "Gold Ring" "Agate Amulet" "Spine Bow" "Amethyst Ring"
+	Rarity Normal
+    SetBorderColor 0 100 0
+    SetTextColor 255 255 255 255
+    Rarity Normal
+
+
 
 Show
     BaseType "Sacrificial Garb"
@@ -269,3 +275,9 @@ Show
     Quality >= 1
     SetBackgroundColor 75 75 75
     SetBorderColor 0 0 0
+	
+	
+#Rest of the junk
+Show
+    SetBackgroundColor 17 17 17 100
+    SetFontSize 30
