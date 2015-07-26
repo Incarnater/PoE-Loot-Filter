@@ -1,0 +1,271 @@
+#Custom PoE Filter
+#Made By: Oliver Liu
+
+Show
+    Class Quest Items
+    SetBorderColor 0 255 0
+
+#------------------------------------------------------------------------
+# Section: 0100 # TOP TIER RARITY
+#------------------------------------------------------------------------
+
+Show
+    Class "Fishing Rod"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 255 255 255 255
+    SetFontSize 50
+    PlayAlertSound 6 100
+
+#Exception for tabula
+
+Show
+    SocketGroup WWWWWW
+    BaseType "Simple Robe"
+    Rarity Unique
+    SetFontSize 40
+    PlayAlertSound 6 100
+
+Show
+    LinkedSockets 6
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 255 255 255 255
+    SetFontSize 44
+    PlayAlertSound 6 100
+
+Show
+    BaseType "Mirror of Kalandra"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 255 255 255 255
+    SetFontSize 50
+    PlayAlertSound 6 100
+
+#------------------------------------------------------------------------
+# Section: 0200 # UNIQUES AND MAPS
+#------------------------------------------------------------------------
+
+Show
+    Rarity Unique
+    SetBorderColor 100 100 10
+    PlayAlertSound 6 100
+    SetFontSize 40
+
+Show
+    Class Maps
+    PlayAlertSound 4 100
+    SetFontSize 38
+Show
+    Class "Maps" "Map Fragments"
+    PlayAlertSound 4 100
+    SetFontSize 38
+
+
+#------------------------------------------------------------------------
+# Section: 0300 # CURRENCY
+#------------------------------------------------------------------------
+
+#----------------------------------------------------
+# 0301 # TOP TIER: ETERNAL, DIVINE, EXALTED
+#----------------------------------------------------
+
+Show
+    BaseType "Divine Orb" "Exalted Orb" "Albino Rhoa Feather"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 255 255 255 255
+    PlayAlertSound 6 100
+    SetFontSize 44
+
+#----------------------------------------------------
+# 0302 # HIGH TIER: FROM ALCHEMY TO REGAL
+#----------------------------------------------------
+
+Show
+    BaseType "Regal Orb" "Orb of Regret" "Vaal Orb" "Chaos Orb" "Blessed Orb" "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Alchemy" "Glassblower's Bauble" "Vaal Orb" "Cartographer's Chisel"
+    SetBackgroundColor 213 159 15
+    SetTextColor 0 0 0
+    SetBorderColor 170 158 130
+    PlayAlertSound 1
+    SetFontSize 38
+
+# 200 158 130 this is the old background color, if you like it more use it instead
+
+#----------------------------------------------------
+# 0303 # BOTTOM TIER: WISDOM AND PORTAL SCROLLS
+#----------------------------------------------------
+
+Show
+    Class Currency
+    SetTextColor 170 158 130 215
+    SetBorderColor 170 158 130
+
+# 170 158 130 default currency color
+
+#----------------------------------------------------
+# 0304 # DIVINATION CARDS
+#----------------------------------------------------
+# Old purple color: "SetTextColor 150 50 190"
+
+Show
+    Class "Divination"
+    SetBackgroundColor 200 50 250
+    SetBorderColor 0 0 0
+    SetTextColor 150 50 190
+    SetFontSize 38
+    PlayAlertSound 1 100
+
+#------------------------------------------------------------------------
+# Section: 0400 # SOCKET/LINK BASED stuff
+#------------------------------------------------------------------------
+
+Show
+    LinkedSockets 5
+    SetBorderColor 0 255 255
+    PlayAlertSound 6 100
+    SetFontSize 40
+
+Show
+    Sockets 6
+    Rarity Rare
+    ItemLevel >= 75
+    SetTextColor 255 190 0
+    SetBackgroundColor 75 75 75
+    SetBorderColor 0 0 0
+    SetFontSize 38
+
+Show
+    Sockets 6
+    SetBackgroundColor 75 75 75
+    SetBorderColor 255 0 0
+    SetFontSize 38
+
+#Chromatic Recipe
+Show
+    SocketGroup RGB
+    SetBackgroundColor 50 100 120
+    SetTextColor 255 255 255
+
+
+Show
+    Sockets >= 3
+    SocketGroup W
+
+#------------------------------------------------------------------------
+# Section: 0500 # SKILL GEMS
+#------------------------------------------------------------------------
+
+Show
+    Class Gem
+    BaseType "Vaal"
+    SetBorderColor 30 150 180
+
+Show
+    Class Gem
+    BaseType "Portal", "Empower", "Enlighten", "Enhance"
+    SetBorderColor 30 150 180
+    PlayAlertSound 6 100
+    SetFontSize 40
+
+Show
+    Class Gem
+    BaseType "Spell Echo", "Multistrike", "Greater Multiple Projectiles"
+    SetBorderColor 30 150 180
+    SetFontSize 38
+
+Show
+    Class Gem
+    Quality > 0
+    SetBorderColor 30 150 180
+    SetFontSize 38
+
+Show
+    Class Gems
+
+#------------------------------------------------------------------------
+# Section: 0600 # RARE ITEM HIGHLIGHTING
+#------------------------------------------------------------------------
+#----------------------------------------------------
+# 060a # RARE RINGS, AMULETS, JEWELS, BELTS
+#----------------------------------------------------
+#Amulets, rings and jewels (likely) don't care much about the droplevel
+
+#Jewels
+Show
+    Rarity Rare
+    Class Jewel
+    SetTextColor 255 255 119 255
+    SetBorderColor 255 255 119 255
+
+Show
+    Rarity Magic
+    Class Jewel
+    SetTextColor 125 175 255
+    SetBorderColor 125 175 255
+
+Show
+    ItemLevel >= 75
+    SetTextColor 255 190 0
+    SetBackgroundColor 25 55 25
+    SetBorderColor 25 180 25
+    SetFontSize 38
+    Class Rings Amulets Belts Jewel
+    Rarity Rare
+
+Show
+    Class Rings Amulets Belts Jewel
+    Rarity Rare
+    SetBackgroundColor 25 55 25
+    SetFontSize 38
+    SetBorderColor 25 180 25
+
+#------------------------------------------------------------------------
+# 0705 # CHANCE ORB BASES - ADD YOUR ITEMS HERE
+#-------------------------------------------------------------------------
+# ADD ADDITIONAL STUFF HERE IF YOU WANT
+
+Show
+    BaseType "Occultist's Vestment" "Imperial Bow" "Prophecy Wand" "Judgement Staff" "Gavel" "Gold Ring" "Agate Amulet" "Spine Bow" "Amethyst Ring"
+    SetBorderColor 0 100 0
+    SetTextColor 255 255 255 255
+    
+
+#Chisel Recipe
+Show
+    BaseType "Gavel" "Rock Breaker" "Stone Hammer"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 255 255 200
+    SetBorderColor 0 0 0 
+
+Show
+    BaseType "Sacrificial Garb"
+    SetTextColor 255 255 255 255
+    SetBorderColor 0 100 0
+    Rarity Normal
+
+#------------------------------------------------------------------------
+# 0710 # PRE-ENDGAME 20% QUALITY ITEMS
+#------------------------------------------------------------------------
+Show
+    Quality = 20
+    Rarity <= Magic
+    ItemLevel <= 60
+    SetBackgroundColor 75 75 75
+    SetBorderColor 0 0 0
+    Rarity Normal
+
+#------------------------------------------------------------------------
+# Section: 0800 # FLASKS
+#------------------------------------------------------------------------
+
+Show
+    Class "Utility Flasks"
+    SetBackgroundColor 75 75 75
+    SetBorderColor 0 0 0
+
+Show
+    BaseType "Flask"
+    Quality >= 1
+    SetBackgroundColor 75 75 75
+    SetBorderColor 0 0 0
